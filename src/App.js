@@ -7,9 +7,9 @@ function App() {
 
     
     <div  className="h-full w-full flex flex-wrap overflow-auto items-center gap-x-8 justify-center">
+          
+     <div className=" w-[380px] h-[581px] bg-red-300  bg-logo-pattern bg-[length:468.32px_634.15px] bg-[top_left_ -46px]">                               {/*logo-pattern i tailvind.config de ayarladik. */}
     
-     <div>
-     <img className="w-[380px] h-[580px]" src="https://www.instagram.com/static/images/homepage/phones/home-phones-2x.png/cbc7174b4f05.png" alt=""/>
      </div>
     </div>
   );
