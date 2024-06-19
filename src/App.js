@@ -26,7 +26,7 @@ useEffect(() => {
 			}
 		}
 		imageSlider()
-		let interval = setInterval(imageSlider, 3000)
+		let interval = setInterval(imageSlider, 2000)
 		return () => {
 			clearInterval(interval)
 		}
