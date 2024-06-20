@@ -53,9 +53,20 @@ useEffect(() => {
 					<img className="w-full h-full absolute top-0 left-0 opacity-0 transition-opacity duration-1000 ease-linear"
 							 src="https://www.instagram.com/static/images/homepage/screenshots/screenshot4-2x.png/8e9224a71939.png"
 							 alt=""/>
-                
-              
        </div>
+     </div>
+
+     <div className=" w-[350px] h-[581px] bg-white border p-[50px] pt-10 pb-6">
+     <a href="#" className="flex justify-center mb-8">
+						<img className="h-[51px]"
+								 src="https://www.instagram.com/static/images/web/logged_out_wordmark-2x.png/d2529dbef8ed.png" alt=""/>
+					</a>
+        <form>
+          <label> 
+            <input type="text" className=" bg-zinc-50 border"/>
+          </label>
+
+        </form>
      </div>
     </div>
   );
