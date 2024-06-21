@@ -56,8 +56,8 @@ useEffect(() => {
        </div>
      </div>
 
-     <div className=" w-[350px]  bg-white border p-[50px] pt-8 pb-2">
-     <a href="#" className="flex justify-center">
+     <div className=" w-[350px]  bg-white border px-[40px] pt-8 pb-2">
+     <a href="#" className="flex justify-center mb-8">
 						<img className="h-[51px]"
 								 src="https://www.instagram.com/static/images/web/logged_out_wordmark-2x.png/d2529dbef8ed.png" alt=""/>
 					</a>
@@ -71,6 +71,7 @@ useEffect(() => {
             <input type="password" required={true} className=" bg-zinc-50 px-2 border  rounded-sm outline-none text-xs focus:border-gray-400 w-full h-[38px] valid:pt-[10px] peer"/>
             <small className="absolute top-1/2 left-[9px] cursor-text pointer-events-none text-xs text-gray-400 -translate-y-1/2 transition-all peer-valid:text-[10px] peer-valid:top-2.5" >Password</small>
           </label>
+          <button type="submit" className="h-[30px] rounded bg-brand text-white"> Log In</button>
 
         </form>
      </div>
