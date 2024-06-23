@@ -4,10 +4,13 @@ import { useEffect, useRef } from "react";
 function App() {
 
   const ref = useRef()
+  const [usernama, setUsernama] = useState("");
+  const [password, setPassword] = useState("");
+  
 
 
 useEffect(() => {
-   //console.log(ref.current) // divin icindekiler görüldu
+   //console.log(ref.current) // divin icindekiler görüldü
     //console.log(ref.current.querySelectorAll('img'))  //Nodelist görüldü
 		let images = ref.current.querySelectorAll('img'),
 			total = images.length,
@@ -74,7 +77,7 @@ useEffect(() => {
           <button type="submit" disabled={true} className="h-[30px] rounded bg-brand font-semibold text-white text-sm disabled:opacity-50" > Log In</button>
             <div className="flex items-center">
               <div className="h-px bg-gray-300 flex-1" />
-                <span className="px-4 text-[13px] text-gray-500 fpnt-semibold"> OR</span>
+                <span className="px-4 text-[13px] text-gray-500 font-semibold"> OR</span>
               <div className="h-px bg-gray-300 flex-1" />
 
               
