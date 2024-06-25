@@ -1,13 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef,useState } from "react";
 
 
 function App() {
 
   const ref = useRef()
-  const [usernama, setUsernama] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   
-  const enable = usernama && password;
+  const enable = username && password;
 
 
 useEffect(() => {
@@ -67,12 +67,12 @@ useEffect(() => {
 					</a>
         <form className="grid gap-y-1">
           <label className="block relative"> 
-            <input type="text" required={true} className=" bg-zinc-50 px-2 border  rounded-sm outline-none text-xs focus:border-gray-400 w-full h-[38px] valid:pt-[10px] peer"/>
+            <input type="text"  value={username} onChange={e => setUsername(e.target.value)} required={true} className=" bg-zinc-50 px-2 border  rounded-sm outline-none text-xs focus:border-gray-400 w-full h-[38px] valid:pt-[10px] peer"/>
             <small className="absolute top-1/2 left-[9px] cursor-text pointer-events-none text-xs text-gray-400 -translate-y-1/2 transition-all peer-valid:text-[10px] peer-valid:top-2.5" >Phone number, username or email</small>
           </label>
 
           <label className="block relative"> 
-            <input type="password" required={true} className=" bg-zinc-50 px-2 border  rounded-sm outline-none text-xs focus:border-gray-400 w-full h-[38px] valid:pt-[10px] peer"/>
+            <input type="password" required={true} value={password} onChange={e => setPassword(e.target.value)} className=" bg-zinc-50 px-2 border  rounded-sm outline-none text-xs focus:border-gray-400 w-full h-[38px] valid:pt-[10px] peer"/>
             <small className="absolute top-1/2 left-[9px] cursor-text pointer-events-none text-xs text-gray-400 -translate-y-1/2 transition-all peer-valid:text-[10px] peer-valid:top-2.5" >Password</small>
           </label>
           <button type="submit" disabled={!enable} className="h-[30px] rounded bg-brand font-semibold text-white text-sm disabled:opacity-50" > Log In</button>
