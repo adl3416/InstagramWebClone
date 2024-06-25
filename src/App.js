@@ -7,6 +7,7 @@ function App() {
   const [usernama, setUsernama] = useState("");
   const [password, setPassword] = useState("");
   
+  const enable = usernama && password;
 
 
 useEffect(() => {
@@ -74,7 +75,7 @@ useEffect(() => {
             <input type="password" required={true} className=" bg-zinc-50 px-2 border  rounded-sm outline-none text-xs focus:border-gray-400 w-full h-[38px] valid:pt-[10px] peer"/>
             <small className="absolute top-1/2 left-[9px] cursor-text pointer-events-none text-xs text-gray-400 -translate-y-1/2 transition-all peer-valid:text-[10px] peer-valid:top-2.5" >Password</small>
           </label>
-          <button type="submit" disabled={true} className="h-[30px] rounded bg-brand font-semibold text-white text-sm disabled:opacity-50" > Log In</button>
+          <button type="submit" disabled={!enable} className="h-[30px] rounded bg-brand font-semibold text-white text-sm disabled:opacity-50" > Log In</button>
             <div className="flex items-center">
               <div className="h-px bg-gray-300 flex-1" />
                 <span className="px-4 text-[13px] text-gray-500 font-semibold"> OR</span>
