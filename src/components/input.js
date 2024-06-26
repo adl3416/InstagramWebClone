@@ -5,6 +5,7 @@ export default function Input({label, type = 'text', ...props}) {
 	const inputRef = useRef()
 	const [show, setShow] = useState(false)
 	const [inputType, setType] = useState(type)
+	
 
 	useEffect(() => {
 		if (show) {
