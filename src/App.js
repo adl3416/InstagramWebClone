@@ -13,7 +13,7 @@ function App() {
 
 
 useEffect(() => {
-   //console.log(ref.current) // divin icindekiler görüldüü
+   //console.log(ref.current) // divin icindekiler görüldü
     //console.log(ref.current.querySelectorAll('img'))  //Nodelist görüldüü
 		let images = ref.current.querySelectorAll('img'),
 			total = images.length,
