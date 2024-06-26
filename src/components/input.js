@@ -5,10 +5,10 @@ export default function Input({label, type = 'text', ...props}) {
 	const inputRef = useRef()
 	const [show, setShow] = useState(false)
 	const [inputType, setType] = useState(type)
-	
+
 
 	useEffect(() => {
-		if (show) {
+		if (show) {     // nezaman  show var ozaman settype gidip text cekelim, diger turlu pasword olarak geri cekelim.
 			setType('text')
 			inputRef.current.focus()
 		} else if (type === 'password') {
